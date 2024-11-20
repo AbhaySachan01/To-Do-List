@@ -1,0 +1,176 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     font-family:'Garamond, Courier New, Courier, monospace';
+     color: rgb(0, 0, 0);
+     list-style: none;
+}
+#container{
+     min-height: 100vh; 
+     min-width: 100%;
+     
+     background-image: linear-gradient(0deg,#000000,#062594);
+     padding: 10px;
+     position: relative;
+}
+section{
+     /* border: 1px solid white; */
+     width: 100%;
+     max-width: 600px;
+     margin: 100px auto;
+     box-shadow: 
+     0 6px 1px rgba(0,0,0,.1),
+     0 0 5px rgba(0,0,0,.1),
+     0 1px 3px rgba(0,0,0,.3),
+     0 3px 5px rgba(0,0,0,.2),
+     0 5px 10px rgba(0,0,0,.25),
+     0 10px 10px rgba(0,0,0,.2),
+     0 20px 20px rgba(0,0,0,.15);;
+     padding: 40px 30px 40px;
+     background-color: aliceblue;
+     border-radius: 1rem;
+}
+
+#heading{
+     width:100% ;
+     max-width: 500px;
+     margin: 0px auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    font-size: 1.4rem;
+   
+}
+#heading h2 img{
+     height: 28px;
+     width: 28px;
+}
+.day{
+     font-size: 1.7rem;
+     padding-right: 2px;
+}
+#input{
+     width: 100%;
+     border: 1px solid white;
+     max-width: 500px;
+     margin: 20px auto;
+     height: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 3rem;
+     background-color: #dee2e6;
+}
+#input #inp{
+     /* border: 1px solid red; */
+     text-align: center;
+     flex: 1;
+     border: none;
+     outline: none;
+     background-color: transparent;
+     padding-left: 25px;
+     font-size: 1.5rem;
+}
+#input #btn{
+     border: none;
+     outline: none;
+     background-color: transparent;
+     padding:  16px 50px;
+     cursor: pointer;
+     background-color: #023e8a;
+    border-radius: 3rem;
+    color: white;
+    font-size: 16px;
+    font-weight: 500px;
+}
+#input #btn:hover{
+     background-color: #f77f00;
+     border-radius: 3rem;
+}
+ul li{
+     margin: 10px auto;
+     border-radius: 3rem;
+     width: 95%;
+     list-style: none;
+     font-size: 1.4rem;
+     padding: 10px 8px 10px 50px;
+     cursor: pointer;
+     user-select: none;
+     position : relative;
+     background-color: #e2fdff;
+     box-shadow: 1px 1px 3px #9db2ff ;
+ 
+ }
+ ul li:nth-of-type(2n+1){
+     background-color: #ffeedd;
+ }
+ 
+ ul li::before{
+     content: " ";
+     position: absolute;
+     height: 28px;
+     width: 28px;
+     border-radius: 50%;
+     background-size: cover;
+     background-image: url(./images/radiobox-unchecked.png);
+     background-position: center;
+     top: 7px;
+     left: 8px;
+ }
+ ul li.checked{
+     color: rgb(82, 81, 81);
+     text-decoration: line-through;
+ }
+ ul li.checked::before{
+     border-radius: 60%;
+     background-image: url(./images/checked.png);
+ }
+ li span.delete{
+     position: absolute;
+     top: 5px;
+     right: 8px;
+     border: 2px solid #023e8a;
+     width: 40px;
+     height: 35px;
+     background-image: url(./images/blue_dust.png);
+     background-position: center;
+     background-size: cover;
+     border-radius: 50%;
+}
+li span.delete:hover{
+     background-image: url(./images/delete.png);
+}
+@media screen and (max-width:550px){
+     #input #inp{
+          width: 95%;
+          border-radius: 3rem;
+          background-color: #dee2e6;
+     }
+     #input #btn{
+          padding: 15px 25px ;
+          border-radius: 3rem;
+     }
+     #heading{
+          flex-direction: column;
+     }
+     
+}
+#my{
+     position: absolute;
+     bottom: 30px;
+     right: 30px;
+     height: 30px;
+     width: 200px;
+     border-radius: 3rem;
+     background-color: aliceblue;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #023e8a;
+}
+#my a{
+     text-decoration: none;
+     font-size: 1.2rem;
+     color: rgb(214, 212, 212);
+}
